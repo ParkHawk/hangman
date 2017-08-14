@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h2>Word Game</h2>
+  <div class="outerLetter">
+    {{#letters}}
+      <div class="innerLetter">
+        {{.}}
+      </div>
+    {{/letters}}
+  </div>
+
+  <section>
+    <form class="" action="/" method="post">
+      <input type="text" name="guess" value="">
+      <button type="submit" name="button"><h4>Submit</h4></button>
+    </form>
+  </section>
+
+  <section>
+    <h3>{{guesses}}</h3> 
+  </section>
+
+  <div class="wrongGuesses">
+    {{#wrongGuesses}}
+      <section>
+        {{.}}
+      </section>
+    {{/wrongGuesses}}
+  </div>
+
+</body>
+
+</html>
